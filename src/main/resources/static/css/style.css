@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+h1 {
+  color: rgb(144, 129, 129);
+}
+nav {
+  display: flex;
+  margin: 10px auto;
+  width: 40rem;
+  border-bottom: thin solid gray;
+  margin: 25px 0;
+}
+div {
+  display: block;
+  margin: 0 auto;
+  width: 40rem;
+}
+a:first-of-type {
+  text-decoration: none;
+  align-self: center;
+  margin: 0 0 0 auto;
+  width: 50px;
+}
+input {
+  display: block;
+}
+p {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 35rem;
+  height: 20px;
+  margin: 5px auto;
+  border-radius: 10px;
+}
+
+div:nth-of-type(2) {
+  background-color: rgb(175, 172, 172);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#button {
+  padding: 15px 25px;
+  font-size: 24px;
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#button:hover {
+  background-color: #3e8e41;
+}
+
+#button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.watermark {
+  color: black;
+
+  margin: 25px auto;
+  padding: 5px;
+  left: 150px;
+  width: 40rem;
+  border-top: thin solid gray;
+  font-size: 12px;
+  color: gray;
+  font-family: "Bebas Neue", cursive;
+}

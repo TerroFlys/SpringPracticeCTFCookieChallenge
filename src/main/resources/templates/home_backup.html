@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<a href="/reset">reset/home</a>
+<h1>Cookie Site</h1>
+<p>I like cookies, inspired by picoCTF cookie challenge</p>
+<p>Can you find the flag ?</p>
+<p>Flag format: TerroLexCTF{FLAG}</p>
+<p th:if="${wrong}">That is not a valid cookie</p>
+<p th:if="${cookie}" th:text="|Yes, I like ${cookie.getName()}|"></p>
+<p th:if="${flag}" th:text="|Flag: ${flag.getName()}|"></p>
+<form action="/check" method="POST">
+  <input type="text" name="name" placeholder="Chocolate Chips">
+  <input type="submit" value="Search">
+</form>
+
+</body>
+</html>

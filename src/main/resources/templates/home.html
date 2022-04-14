@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <h1>Cookies</h1>
+        <a href="/reset">Home</a>
+      </nav>
+    </div>
+
+    <div>
+      <p>Can you find the flag ?</p>
+      <p>Flag format: TerroLexCTF{FLAG}</p>
+      <p th:if="${wrong}">That is not a valid cookie</p>
+      <p th:if="${cookie}" th:text="|Yes, I like ${cookie.getName()}|"></p>
+      <p th:if="${flag}" th:text="|flag: ${flag.getName()}|"></p>
+      <form action="/check" method="POST">
+        <input type="text" name="name" placeholder="Chocolate Chips" />
+        <input id="button" type="submit" value="Search" />
+      </form>
+    </div>
+
+    <p class="watermark">© LexTerro</p>
+  </body>
+</html>
