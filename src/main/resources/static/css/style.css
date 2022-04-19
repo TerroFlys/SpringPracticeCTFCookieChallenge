@@ -79,3 +79,13 @@ div:nth-of-type(2) {
   color: gray;
   font-family: "Bebas Neue", cursive;
 }
+
+.wrong {
+  color: #750f0f;
+}
+.cookie {
+  color: #785b1a;
+}
+.flag {
+  color: #0f700f;
+}

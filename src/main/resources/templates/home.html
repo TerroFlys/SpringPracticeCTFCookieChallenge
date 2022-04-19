@@ -17,9 +17,9 @@
     <div>
       <p>Can you find the flag ?</p>
       <p>Flag format: TerroLexCTF{FLAG}</p>
-      <p th:if="${wrong}">That is not a valid cookie</p>
-      <p th:if="${cookie}" th:text="|Yes, I like ${cookie.getName()}|"></p>
-      <p th:if="${flag}" th:text="|flag: ${flag.getName()}|"></p>
+      <p th:if="${wrong}" class="wrong">That is not a valid cookie</p>
+      <p th:if="${cookie}" th:text="|Yes, I like ${cookie.getName()}|" class="cookie"></p>
+      <p th:if="${flag}" th:text="|flag: ${flag.getName()}|" class="flag"></p>
       <form action="/check" method="POST">
         <input type="text" name="name" placeholder="Chocolate Chips" />
         <input id="button" type="submit" value="Search" />
